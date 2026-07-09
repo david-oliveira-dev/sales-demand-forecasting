@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 from pathlib import Path
 
 import pandas as pd
@@ -21,6 +22,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 import requests
 import streamlit as st
+
+# Permite rodar via `streamlit run app/dashboard.py`: garante a raiz do projeto
+# no sys.path (senão o pacote `src` não é encontrado, pois o cwd fica em app/).
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from src.data.generate_synthetic import generate_sales
 
