@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Dados e artefatos (não versionar grandes)
+data/raw/*.csv
+data/processed/*.parquet
+data/processed/*.csv
+data/processed/*.db
+models/*.keras
+models/*.h5
+models/*.joblib
+models/*.pkl
+mlruns/
+mlflow.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Ambiente / segredos
+.env
+*.log
+
+# SO / editores
+.DS_Store
+.idea/
+.vscode/

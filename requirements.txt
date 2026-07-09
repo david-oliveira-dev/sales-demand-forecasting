@@ -1,0 +1,30 @@
+# Core
+pandas>=2.2
+numpy>=1.26
+
+# Séries temporais / modelagem
+statsmodels>=0.14
+prophet>=1.1
+xgboost>=2.0
+scikit-learn>=1.4
+tensorflow-cpu>=2.16
+holidays>=0.50
+
+# MLOps
+mlflow>=2.12
+
+# Serviço / dashboard
+fastapi>=0.111
+uvicorn[standard]>=0.29
+streamlit>=1.35
+pydantic>=2.7
+plotly>=5.20
+
+# Dados / banco
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+pyarrow>=16.0
+
+# Testes
+pytest>=8.0
+httpx>=0.27
