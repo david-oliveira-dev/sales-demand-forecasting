@@ -1,0 +1,37 @@
+{
+  "best_model": "prophet",
+  "best_rmse": 80.138,
+  "horizon": 90,
+  "all": {
+    "prophet": {
+      "mae": 61.038,
+      "rmse": 80.138,
+      "mape": 3.913,
+      "smape": 3.875
+    },
+    "arima": {
+      "mae": 227.41,
+      "rmse": 287.179,
+      "mape": 13.616,
+      "smape": 14.617
+    },
+    "sarima": {
+      "mae": 64.104,
+      "rmse": 87.64,
+      "mape": 3.988,
+      "smape": 4.017
+    },
+    "xgboost": {
+      "mae": 107.794,
+      "rmse": 137.518,
+      "mape": 6.644,
+      "smape": 6.97
+    },
+    "lstm": {
+      "mae": 433.549,
+      "rmse": 508.255,
+      "mape": 27.704,
+      "smape": 29.675
+    }
+  }
+}
