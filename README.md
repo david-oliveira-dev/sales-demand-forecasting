@@ -53,6 +53,8 @@ Detalhes e fluxograma em [`reports/ARCHITECTURE.md`](reports/ARCHITECTURE.md).
 Backtest com **holdout temporal** (últimos 90 dias como teste; treino sempre
 anterior ao teste — sem vazamento de futuro):
 
+![Previsão vs. realizado](reports/figures/forecast_vs_real.png)
+
 | Modelo | MAE | RMSE | MAPE (%) | sMAPE (%) |
 |---|---|---|---|---|
 | **Prophet** ✅ | **61.0** | **80.1** | **3.9** | **3.9** |
@@ -60,6 +62,8 @@ anterior ao teste — sem vazamento de futuro):
 | XGBoost | 107.8 | 137.5 | 6.6 | 7.0 |
 | ARIMA | 227.4 | 287.2 | 13.6 | 14.6 |
 | LSTM | 433.5 | 508.3 | 27.7 | 29.7 |
+
+![Comparação entre modelos](reports/figures/comparacao_modelos.png)
 
 **Prophet** venceu (menor RMSE, MAPE ~3,9%): modela bem as sazonalidades múltiplas
 (semanal + anual) e os regressores promo/holiday. O **SARIMA** ficou logo atrás —
