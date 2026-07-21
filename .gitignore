@@ -30,3 +30,8 @@ mlflow.db
 .DS_Store
 .idea/
 .vscode/
+
+# Contexto de build (mantidos localmente, fora do versionamento)
+BUILD_BRIEF.md
+CLAUDE.md
+.claude/
