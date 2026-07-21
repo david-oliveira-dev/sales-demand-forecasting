@@ -8,6 +8,16 @@ Pleno**, com foco em rigor de série temporal (backtest sem vazamento de futuro)
 
 ![CI](https://github.com/david-oliveira-dev/sales-demand-forecasting/actions/workflows/ci.yml/badge.svg)
 
+> ⚠️ **Sobre os dados.** A série histórica é **sintética**, gerada por
+> [`src/data/generate_synthetic.py`](src/data/generate_synthetic.py). A escolha é
+> deliberada: o objetivo é a **engenharia ponta a ponta** — backtest com holdout
+> temporal, comparação de famílias de modelos, serviço e dashboard — e não a
+> descoberta de um sinal novo. Como o gerador compõe tendência e sazonalidade
+> explícitas, **as métricas abaixo não são comparáveis a benchmarks de dado real**:
+> um MAPE de 3,9% reflete uma série bem-comportada, sem promoções, rupturas ou
+> quebras de regime, que são exatamente o que torna previsão de demanda difícil
+> na prática.
+
 ## Contexto de negócio
 Varejo e logística vivem de **planejar demanda**: comprar estoque de menos gera
 ruptura e venda perdida; de mais, gera custo de capital e perdas. Prever as
